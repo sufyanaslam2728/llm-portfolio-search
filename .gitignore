@@ -26,3 +26,41 @@ venv/
 *.log
 .history
 test_results.db
+
+
+
+# ---- Frontend (client folder) ----
+
+# dependencies
+client/node_modules
+client/.pnp
+client/.pnp.js
+
+# production
+client/build/
+
+# testing
+client/coverage
+
+
+# misc
+client/.env
+client/.eslintcache
+client/.turbo/
+
+# Optional: log files
+*.log
+
+# Optional: package lock files if using Yarn or npm
+client/yarn.lock
+client/package-lock.json
+
+
+
+
+
+
+
+
+
+
