@@ -64,6 +64,9 @@ const QuestionForm = () => {
               <p>
                 <strong>Tags:</strong> {project.tags.join(", ")}
               </p>
+              <p>
+                <strong>Stacks:</strong> {project.stack.join(", ")}
+              </p>
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 Visit Website
               </a>

@@ -15,7 +15,7 @@ class RAGPipeline:
             f"You are an assistant for a software portfolio search tool.\n"
             f"User query: \"{query}\"\n"
             f"Is this query related to finding software projects, tech stack, features, industries, or platforms? "
-            f"Reply only with 'YES' or 'NO'."
+            f"Reply only with 'YES, ' or 'NO, '."
         )
 
         relevance_response = self.client.chat(
@@ -25,7 +25,7 @@ class RAGPipeline:
         
         reply = relevance_response['message']['content'].strip().upper()
         print("Reply: ", reply)
-        if "NO" in reply:
+        if "NO, " in reply:
             return {
                 "summary": "Your query does not appear to be relevant to software project search. Please ask about tech stack, features, industries, or platforms.",
                 "projects": [],
